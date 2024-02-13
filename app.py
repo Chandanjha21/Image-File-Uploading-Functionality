@@ -10,7 +10,7 @@ class Picture(db.Model):
     photo_name = db.Column(db.String , nullable = False)
     data = db.Column(db.LargeBinary )
     
-
+# This method specifies or make the content accessible to the front end or you can say it them representable
     def __repr__(self) -> str:
         return f"{self.sno} - {self.photo_name} - {self.data} "
     
